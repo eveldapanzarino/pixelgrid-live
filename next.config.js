@@ -2,6 +2,7 @@
 const nextConfig = {
     /* config options here */
     output: 'export',
+    basePath: "https://eveldapanzarino.github.io/pixelgrid-live/",
     distDir: "_static",
     images: {
         unoptimized: true
