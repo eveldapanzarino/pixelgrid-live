@@ -1,22 +1,16 @@
 {
-  "name": "hello-next",
+  "name": "next-app-setup",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Scripted setup and run commands for a Next.js project",
   "scripts": {
-    "dev": "next dev",
     "build": "next build",
-    "start": "node sammy.js; serve -s _static -l tcp://0.0.0.0:${PORT:-8080} -n",
-    "lint": "next lint"
+    "start": "next start",
+    "install-npx": "npm install -g npx",
+    "create-next-app": "npx create-next-app@latest my-next-app"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "dependencies": {
-    "eslint-config-next": "^15.4.5",
-    "next": "^15.4.5",
-    "react": "^19.1.1",
-    "react-dom": "^19.1.1",
-    "serve": "^14.2.4"
+    "next": "latest",
+    "react": "latest",
+    "react-dom": "latest"
   }
 }
