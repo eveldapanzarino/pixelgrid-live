@@ -1,15 +1,17 @@
 import Image from 'next/image'
+import React from "react";
+import ReactDOM from "react-dom/client";
+import App from "./_app.js"; // make sure App is .js
+import "./index.css";
 
-export default function Home() {
-  return (
-   import PixelGrid from "./pixelgrid.js"; // make sure your PixelGrid file is also .js
+const root = ReactDOM.createRoot(document.getElementById("root"));
 
-export default function App() {
-  return (
-    <div style={{ margin: 0, padding: 0 }}>
-      <PixelGrid />
-    </div>
-  );
-}
+root.render(
+  React.createElement(
+    React.StrictMode,
+    null,
+    React.createElement(App, null)
+  )
+);
 
 
