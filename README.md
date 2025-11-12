@@ -1,58 +1,24 @@
-## Get Started
+I made a React grid based graphic renderer where you can place pixels and their position on the screen is responsive with desktop and mobile. If you want to check it out:
 
-This guide describes how to use DigitalOcean App Platform to run a sample Next.js application.
+https://pixel-grid-alpha.vercel.app/
 
-**Note**: Following these steps may result in charges for the use of DigitalOcean services.
-
-### Requirements
-
-* You need a DigitalOcean account. If you do not already have one, first [sign up](https://cloud.digitalocean.com/registrations/new).
-
-## Deploy the App
-
-Click the following button to deploy the app to App Platform. If you are not currently logged in with your DigitalOcean account, this button prompts you to to log in.
-
-[![Deploy to DigitalOcean](https://www.deploytodo.com/do-btn-blue.svg)](https://cloud.digitalocean.com/apps/new?repo=https://github.com/digitalocean/sample-nextjs/tree/main)
-
-Note that, for the purposes of this tutorial, this button deploys the app directly from DigitalOcean's GitHub repository, which disables automatic redeployment since you cannot change our template. If you want automatic redeployment or you want to change the sample app's code to your own, we instead recommend you fork [our repository](https://github.com/digitalocean/sample-nextjs/tree/main).
-
-To fork our repository, click the **Fork** button in the top-right of [its page on GitHub](https://github.com/digitalocean/sample-nextjs/tree/main), then follow the on-screen instructions. To learn more about forking repos, see the [GitHub documentation](https://docs.github.com/en/github/getting-started-with-github/fork-a-repo).
-
-After forking the repo, you can view the same README in your own GitHub org; for example, in `https://github.com/<your-org>/sample-nextjs`. To deploy the new repo, visit the [control panel](https://cloud.digitalocean.com/apps) and click the **Create App** button. This takes you to the app creation page. Under **Service Provider**, select **GitHub**. Then, under **Repository**, select your newly-forked repo. Ensure that your branch is set to **main** and **Autodeploy** is checked on. Finally, click **Next**.
-
-After clicking the **Deploy to DigitalOcean** button or completing the instructions above to fork the repo, follow these steps:
-
-1. Configure the app, such as by specifying HTTP routes, declaring environment variables, or adding a database. For the purposes of this tutorial, this step is optional.
-1. Provide a name for your app and select the region to deploy your app to, then click **Next**. By default, App Platform selects the region closest to you. Unless your app needs to interface with external services, your chosen region does not affect the app's performance, since to all App Platform apps are routed through a global CDN.
-1. On the following screen, leave all the fields as they are and click **Next**.
-1. Confirm your plan settings and how many containers you want to launch and click **Launch Basic/Pro App**.
-
-After, you should see a "Building..." progress indicator. You can click **View Logs** to see more details of the build. It can take a few minutes for the build to finish, but you can follow the progress in the **Deployments** tab.
-
-Once the build completes successfully, click the **Live App** link in the header and you should see your running application in a new tab, displaying the home page.
+click and you place pixels
 
 
-## Make Changes to Your App
 
-If you forked our repo, you can now make changes to your copy of the sample app. Pushing a new change to the forked repo automatically redeploys the app to App Platform with zero downtime.
+# React + Vite
 
-Here's an example code change you can make for this app:
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-1. Edit `pages/index.js` and replace "Welcome to Your Next.js App" with a different greeting
-1. Commit the change to the `main` branch. Normally it's a better practice to create a new branch for your change and then merge that branch to `main` after review, but for this demo you can commit to the `main` branch directly.
-1. Visit the [control panel](https://cloud.digitalocean.com/apps) and navigate to your sample app.
-1. You should see a "Building..." progress indicator, just like when you first created the app.
-1. Once the build completes successfully, click the **Live App** link in the header and you should see your updated application running. You may need to force refresh the page in your browser (e.g. using **Shift** + **Reload**).
+Currently, two official plugins are available:
 
-## Learn More
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-To learn more about App Platform and how to manage and update your application, see [our App Platform documentation](https://www.digitalocean.com/docs/app-platform/).
+## React Compiler
 
-## Delete the App
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-When you no longer need this sample application running live, you can delete it by following these steps:
-1. Visit the [Apps control panel](https://cloud.digitalocean.com/apps).
-2. Navigate to the sample app.
-3. In the **Settings** tab, click **Destroy**.
+## Expanding the ESLint configuration
 
-**Note**: If you do not delete your app, charges for using DigitalOcean services will continue to accrue.
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
