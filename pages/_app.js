@@ -1,6 +1,9 @@
-import "../public/styles.css";
+import PixelGrid from "./pixelgrid.jsx";
 
-// This default export is required in a new `pages/_app.js` file.
-export default function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />;
+export default function App() {
+  return (
+    <div style={{ margin: 0, padding: 0 }}>
+      <PixelGrid />
+    </div>
+  );
 }
